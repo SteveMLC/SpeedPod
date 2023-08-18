@@ -4,7 +4,20 @@ import json
 import os
 
 def main():
-    st.title("Newsletter Dashboard")
+    # 1. Update the title
+    st.title("🚀 SpeedPod 🎙️")
+
+    # 2. Change the color scheme
+    st.markdown("""
+        <style>
+            body {
+                background-color: #F5F5F5;
+            }
+            .stApp {
+                background-color: #E0E0E0;
+            }
+        </style>
+    """, unsafe_allow_html=True)
 
     available_podcast_info = create_dict_from_json_files('.')
 
